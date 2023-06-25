@@ -20,7 +20,7 @@
 .menu-2, .menu-4{
   background: var(--secondary-color);
 }
-.menu-3, .menu-6{
+.menu-3{
   background: var(--tertiary-color);
 }
 .menu ul{
@@ -133,108 +133,4 @@
   .menu-5 a:hover {
     color: var(--primary-color);
   }
-
-
-/* menu 5 */
-.menu-5 a {
-  position: relative;
-  display: inline-block;
-  padding: 0 10px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 22px;
-  text-transform: uppercase;
-  z-index: 1;
-}
-
-.menu-5 a::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background-color: var(--accent-color);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-  z-index: -1;
-}
-
-.menu-5 a:hover::before {
-  transform: scaleX(1);
-}
-
-.menu-5 a:hover {
-  color: var(--primary-color);
-}
-
-.menu-5 a::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background-color: var(--accent-color);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-  z-index: -1;
-}
-
-.menu-5 a:hover::after {
-  transform: scaleX(1);
-}
-
-/* menu 6 */
-.menu-6 a {
-    position: relative;
-    display: inline-block;
-    padding: 0 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 22px;
-    text-transform: uppercase;
-    z-index: 1;
-  }
   
-  .menu-6 a::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background-color: var(--accent-color);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-    z-index: -1;
-  }
-  
-  .menu-6 a:hover::before {
-    transform: scaleX(1);
-  }
-  
-  .menu-6 a:hover {
-    color: var(--primary-color);
-  }
-  
-  .menu-6 a::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background-color: var(--accent-color);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-    z-index: -1;
-  }
-  
-  .menu-6 a:hover::after {
-    transform: scaleX(1);
-  }
