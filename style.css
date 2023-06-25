@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -7,16 +7,16 @@
     --primary-color: #260f69;
     --secondary-color: #3f258b;
     --tertiary-color: #4d31a0;
-    --accent-color: #E91E63;
+    --accent-color: #e9dc1e;
 }
 .menu{
   padding: 5em 1.5em;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Belanosima', sans-serif;
 }
-.menu-1, .menu-5{
+.menu-1{
   background: var(--primary-color);
 }
-.menu-2, .menu-4{
+.menu-2{
   background: var(--secondary-color);
 }
 .menu-3{
@@ -69,15 +69,4 @@
 .menu-3 a::before{
   transform-origin: 50% 50%;
   background: var(--accent-color);
-}
-.menu-4 a::before{
-  transform-origin: 100% 50%;
-  background: var(--accent-color);
-}
-.menu-5 a::before{
-  background: var(--accent-color);
-  transform-origin: 0 50%;
-}
-.menu-5 a:hover::before{
-  transform-origin: 100% 50%;
 }
