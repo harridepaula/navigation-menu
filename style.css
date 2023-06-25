@@ -14,13 +14,13 @@
   font-family: 'Open Sans Condensed', sans-serif;
 }
 .menu-1, .menu-5{
-  background: #260f69;
+  background: var(--primary-color);
 }
 .menu-2, .menu-4{
-  background: #371d86;
+  background: var(--secondary-color);
 }
 .menu-3{
-  background: #45299a;
+  background: var(--tertiary-color);
 }
 .menu ul{
   list-style: none;
@@ -40,4 +40,44 @@
   display: block;
   position: relative;
   padding: 4px 0;
+}
+.menu a::before{
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
+}
+.menu a:hover::before{
+  transform: scale3d(1,1,1);
+}
+.menu-1 a::before{
+  background: var(--accent-color);
+  transform-origin: 100% 50%;
+}
+.menu-1 a:hover::before{
+  transform-origin: 0 50%;
+}
+.menu-2 a::before{
+  background: var(--accent-color);
+}
+.menu-3 a::before{
+  transform-origin: 50% 50%;
+  background: var(--accent-color);
+}
+.menu-4 a::before{
+  transform-origin: 100% 50%;
+  background: var(--accent-color);
+}
+.menu-5 a::before{
+  background: var(--accent-color);
+  transform-origin: 0 50%;
+}
+.menu-5 a:hover::before{
+  transform-origin: 100% 50%;
 }
