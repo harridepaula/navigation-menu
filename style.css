@@ -3,3 +3,22 @@
   margin: 0;
   padding: 0;
 }
+:root {
+    --primary-color: #260f69;
+    --secondary-color: #3f258b;
+    --tertiary-color: #4d31a0;
+    --accent-color: #E91E63;
+}
+.menu{
+  padding: 5em 1.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.menu-1, .menu-5{
+  background: #260f69;
+}
+.menu-2, .menu-4{
+  background: #371d86;
+}
+.menu-3{
+  background: #45299a;
+}
